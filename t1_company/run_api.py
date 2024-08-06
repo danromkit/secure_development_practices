@@ -3,7 +3,7 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse
 
 from t1_company.src.controller import router as main_router
-from t1_company.src.exceptions import PracticeException, UserException
+from t1_company.src.exception import PracticeException, UserException
 
 
 def run_api() -> FastAPI:

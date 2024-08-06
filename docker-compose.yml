@@ -1,7 +1,7 @@
 version: "3"
 services:
   api:
-    image: t1_company_test:latest
+    image: daniil00377/t1_company_test:latest
     container_name: t1_company_test
     build: .
     ports:

@@ -13,6 +13,6 @@ RUN pip install "poetry==$POETRY_VERSION"
 FROM poetry as app
 WORKDIR app
 COPY pyproject.toml pyproject.toml
-RUN poetry install
+RUN poetry install --without dev
 COPY . .
 CMD poetry run python3 main.py

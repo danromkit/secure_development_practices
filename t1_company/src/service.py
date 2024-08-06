@@ -2,7 +2,7 @@ from fastapi import status, Depends
 from starlette.requests import Request
 from starlette.responses import Response, RedirectResponse
 
-from t1_company.src.exceptions import PracticeException, UserException
+from t1_company.src.exception import PracticeException, UserException
 from t1_company.src.shema import User
 from jose import jwt, JWTError
 from datetime import datetime, timedelta, timezone
