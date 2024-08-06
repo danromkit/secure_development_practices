@@ -2,7 +2,6 @@ import pytest
 from fastapi.testclient import TestClient
 
 from main import app
-from t1_company.src.shema import User
 
 
 @pytest.fixture(scope="function")
