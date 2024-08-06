@@ -55,7 +55,7 @@ def login(response: Response, user_data: User):
 def get_token(request: Request) -> str | None:
     token: str | None = request.cookies.get('user_access_token')
     if not token:
-        raise UserException('Токен не найден.')
+        raise UserException('Необходимо авторизоваться.')
     return token
 
 

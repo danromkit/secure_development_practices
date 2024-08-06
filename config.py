@@ -5,10 +5,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Auth(BaseSettings):
-    secret_key: str = ""
-    algorithm: str = ""
-    login: str = ""
-    password: str = ""
+    secret_key: str
+    algorithm: str
+    login: str
+    password: str
 
 
 def read_json(file_path: str = "t1_company/practice.json") -> list[dict[str, str]]:

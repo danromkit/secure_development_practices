@@ -1,6 +1,7 @@
 import pytest
 from fastapi.testclient import TestClient
 
+from config import settings
 from main import app
 
 
@@ -12,4 +13,4 @@ def client() -> TestClient:
 
 @pytest.fixture(scope="function")
 def get_test_user() -> dict[str, str]:
-    return {"login": "admin", "password": "admin"}
+    return {"login": settings.auth.login, "password": settings.auth.login}
